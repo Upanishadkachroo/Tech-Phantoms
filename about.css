@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: cursive;
+  }
+
+  header{
+    background-color: rgb(91 33 182);
+  }
+
+  .title{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+.tag{
+    text-align: center;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.about{
+    color:#50285a ;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.services{
+    color:#50285a;
+    padding-top: 40px;
+}
+
+.para{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+main{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: rgb(91 33 182);
+    margin-top: 50px;
+
+}
+
+.copyright-text{
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+and{
+    text-decoration: none;
+}

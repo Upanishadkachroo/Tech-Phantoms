@@ -1,0 +1,277 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    
+  }
+  .grid-item {
+    
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align:left;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-align: center;
+   }
+  
+  img{
+    object-fit: cover;
+  }
+  
+  
+  
+  .card{
+    position: relative;
+    height: 280px;
+    margin-left: 30px;
+    float: left;
+  }
+  
+  .card:active{
+    transform: scale(0.96);
+  
+  }
+  
+  .card input{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0%;
+  }
+  
+  .card input:checked ~ .card-content{
+    border-color: #6443c0;
+  }
+  
+  .card .card-content{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    border-radius: 12px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.02);
+  }
+  
+  .card img{
+    position: relative;
+    height: 100%;
+    width: 300px;
+   
+    transform: translate(-50,0);
+    transition: all ease 0.3%;
+  }
+  
+  .card:hover img{
+    width:100%;
+    height:100%;
+  }
+  
+  .card input:checked ~ .card-content img{
+    filter: grayscale(0.1);
+  }
+  
+   h6{
+    margin: 0 0 8px 0;
+    margin-top: auto;
+    margin-right: 50px;
+    color: #53275e;
+  }
+  
+  
+  
+  
+  .card:hover .card{
+    bottom: 0;
+  }
+  
+  .card input:checked ~ .card-content:before,
+  .card input:checked ~ .card-content:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .card-content:before{
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: #4580E5;
+  }
+  
+  .card-content:after{
+  height: 4px;
+  width: 8px;
+  top: 16px;
+  right: 16px;
+  border: 1px solid #ffffff;
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
+  }
+  
+  input{
+    color: black;
+    background-color: red;
+    padding: 5px 10px;
+    border-color: red;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px/50px;
+    align-content: center;
+  }
+  
+  
+  input:hover{
+    cursor: pointer;
+    background-color: blue;
+  }
+  
+  h1{
+    color: #50285a;
+    
+  }
+  
+  .continue{
+    color:white;
+    background-color: #50285a;
+    text-align: center;
+    width:150px;
+    height:30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: 680px;
+    
+    font-size:25px;
+  }
+  body,html{
+    width:100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.bubbles{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+.bubble{
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    height: 100px;
+    width: 100px;
+    box-shadow: inset 0 0 10px rgba(160, 32, 240, 0.4);
+    border-radius: 50%;
+    animation: flying 15s infinite ease-in;
+
+}
+.bubble:nth-child(1)
+{
+    height: 70px;
+    width: 70px;
+    left: 10%;
+    animation-duration: 4s;
+}
+
+.bubble:nth-child(2)
+{
+    height: 50px;
+    width: 50px;
+    left: 15%;
+    animation-duration: 5s;
+}
+.bubble:nth-child(3)
+{
+    height: 60px;
+    width: 60px;
+    left: 25%;
+    animation-duration: 3s
+}
+.bubble:nth-child(4)
+{
+    height: 40px;
+    width: 40px;
+    left: 35%;
+    animation-duration: 6s;
+}
+.bubble:nth-child(5)
+{
+    height: 50px;
+    width: 50px;
+    left: 48%;
+    animation-duration: 10s;
+}
+.bubble:nth-child(6)
+{
+    height: 20px;
+    width: 20px;
+    left: 55%;
+    animation-duration: 5s;
+}
+.bubble:nth-child(7)
+{
+    height: 35px;
+    width: 35px;
+    left: 65%;
+    animation-duration: 3s;
+}
+.bubble:nth-child(8)
+{
+    height: 45px;
+    width: 45px;
+    left: 45%;
+    animation-duration: 6s;
+}
+.bubble:nth-child(9)
+{
+    height: 39px;
+    width: 39px;
+    left: 72%;
+    animation-duration: 7s;
+}
+.bubble:nth-child(10)
+{
+    height: 45px;
+    width: 45px;
+    left: 80%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(11)
+{
+    height: 40px;
+    width: 40px;
+    left: 75%;
+    animation-duration: 9s;
+}
+@keyframes flying {
+    0%{
+        bottom: -100px;
+       
+        transform: translateX(0);
+
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 768px;
+        transform: translateX(-300px);
+    }}
