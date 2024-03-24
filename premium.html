@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+   body,html{
+    width:100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.bubbles{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+.bubble{
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    height: 100px;
+    width: 100px;
+    box-shadow: inset 0 0 10px rgba(111, 3, 178, 0.4);
+    border-radius: 50%;
+    animation: flying 15s infinite ease-in;
+
+}
+.bubble:nth-child(1)
+{
+    height: 70px;
+    width: 70px;
+    left: 10%;
+    animation-duration: 4s;
+}
+
+.bubble:nth-child(2)
+{
+    height: 50px;
+    width: 50px;
+    left: 15%;
+    animation-duration: 5s;
+}
+.bubble:nth-child(3)
+{
+    height: 60px;
+    width: 60px;
+    left: 25%;
+    animation-duration: 3s
+}
+.bubble:nth-child(4)
+{
+    height: 40px;
+    width: 40px;
+    left: 35%;
+    animation-duration: 6s;
+}
+.bubble:nth-child(5)
+{
+    height: 50px;
+    width: 50px;
+    left: 48%;
+    animation-duration: 10s;
+}
+.bubble:nth-child(6)
+{
+    height: 20px;
+    width: 20px;
+    left: 55%;
+    animation-duration: 5s;
+}
+.bubble:nth-child(7)
+{
+    height: 35px;
+    width: 35px;
+    left: 65%;
+    animation-duration: 3s;
+}
+.bubble:nth-child(8)
+{
+    height: 45px;
+    width: 45px;
+    left: 45%;
+    animation-duration: 6s;
+}
+.bubble:nth-child(9)
+{
+    height: 39px;
+    width: 39px;
+    left: 72%;
+    animation-duration: 7s;
+}
+.bubble:nth-child(10)
+{
+    height: 45px;
+    width: 45px;
+    left: 80%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(11)
+{
+    height: 40px;
+    width: 40px;
+    left: 75%;
+    animation-duration: 9s;
+}
+
+@keyframes flying {
+    0%{
+        bottom: -100px;
+       
+        transform: translateX(0);
+
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 768px;
+        transform: translateX(-300px);
+    }}
+</style>
+<body>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <div class="flex flex-col justify-center items-center bg-white w-screen h-screen"> 
+
+            <h1 class="bg-300% font-bold font-comic text-6xl pb-10 bg-gradient-to-tr from-blue-500 via-purple-500 to-sky-500 bg-clip-text text-transparent animate-gradient">ABHIRUCHI</h1>
+
+            <a href="" class="active:cursor-wait">
+        <div class="bg-purple-200 animate-fade-left animate-once animate-ease-linear animate-normal cursor-pointer border-4 hover:border-l-orange-600 hover:border-r-orange-600 border-blue-800 rounded-3xl w-1/2 h-12 my-5 hover:bg-sky-400 transition-all duration-300 active:ring-8 active:ring-offset-gray-900 ">
+                <p class="text-center mt-2 text-black text-xl font-comic font-bold">Take Premium</p>
+            </a>
+                
+        </div>
+
+        <a href="" class="active:cursor-wait">
+            <div class="bg-purple-200 animate-fade-right animate-once animate-ease-linear animate-normal cursor-pointer border-4 hover:border-l-orange-600 hover:border-r-orange-600 border-blue-800 rounded-3xl w-1/2 h-12 my-5 hover:bg-sky-400 transition-all duration-300 active:ring-8 active:ring-offset-gray-900 ">
+                    <p class="text-center mt-2 text-black text-xl font-bold font-comic ">Join as a Guest</p>
+                    <!-- <button class="text-center mt-2 text-black text-xl font-bold font-comic "> Join as Guest </button> -->
+                </a>
+                    
+            </div>
+        </div>
+         
+
+        <!-- <div class="flex flex-row justify-center items-center w-2/4 h-64 gap-2 mt-[-22rem] ml-[25rem] font-bold font-comic">
+            <input type="checkbox" id="t&c" class="cursor-pointer w-4 h-5 border-2 rounded-md border-pink-400 focus:ring-green-600">
+            <label for="t&c" class="text-black text-center" id="checkbox1 "> Yes,I agree to the terms and Conditions</label>
+        
+        </div> -->
+</body>
+</html>
