@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (signupButton) {
     signupButton.addEventListener('click', async function (event) {
       console.log("pressed")
-      // event.preventDefault(); // Prevent form submission
+       event.preventDefault(); // Prevent form submission
       const username = usernameInput.value.trim();
       const email = emailInput.value.trim();
       const password = passwordInput.value.trim();

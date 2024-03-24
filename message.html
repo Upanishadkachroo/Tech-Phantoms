@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <link rel="stylesheet" href="message.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+        <header class="navcont">
+            <a href="" class="icons" id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
+                <path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+            </a>
+
+            <a href="home.html" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30px" height="30px">
+                <path fill="#f1f2f3" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+            </svg>
+            </a>
+
+            <a href="events.html" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
+                <path fill="#ffffff" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/>
+            </svg>
+            </a>
+
+            <a href="Rewards.html" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30px" height="30px">
+                <path fill="#ffffff" d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z"/>
+            </svg>
+            </a>
+
+            <a href="search.html" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="30px">
+                <path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+            </svg>
+            </a>
+
+            <a href="notification.html" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
+                <path fill="#ffffff" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+            </svg>
+            </a>
+
+            <a href="message.html" class="icons" id="icons-chat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="30px" height="30px">
+                <path fill="#ffffff" d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/>
+            </svg>
+            </a>
+        </header>
+
+        
+        <div class="container">
+            <div class="left-div">
+                <div class="connections">
+                    <div class="connect">
+                     Connections
+                    </div>
+                    
+                    <div class="grid-container">
+                        <div class="grid-item">
+                           <i class="fa-solid fa-user i"></i>
+                           <h5>Suraj Joshi</h5>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Suraj Joshi</h5>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Umesh Sharma</h5>
+                        </div>  
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Dinesh Singh</h5>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Divya Kumar</h5>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Anuj Patel</h5>
+                        </div>  
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Deepti Kaur</h5>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <i class="fa-solid fa-user i"></i>
+                            <h5>Manoj Prasad</h5>
+                        </div>
+                        
+                        
+                        
+                        </div>
+                     </div>
+                </div>
+
+            <div class="right-div">
+                <div class="top">
+                    <img src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8">
+                    <div class="msg-header">
+                        <h2>Sarah Khan</h2>
+                        <h4>3 hours ago...</h4>
+                        </div>
+                
+                    </div>
+                
+                    <div class="chat-page">
+                        <div class="msg-inbox">
+                            <div class="chats">
+                            
+                                <div class="msg-page">
+                                  </div>
+                            </div>
+                             </div>
+                    </div>
+            
+                    <div class="msg-bottom">
+                     <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Write message...">
+                            <div class="input-group-append ">
+                                <span class="input-group-text send-icon "><i class="fa-regular fa-paper-plane"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    
+            </div>
+        </div>
+        
+        
+       
+</body>
+</html>
