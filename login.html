@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,20 @@
 <body>
     <h1>login</h1>
     <div class="container">
-        <form>
-            
+        <form id="signupForm" action="/users/login" method="post">
             Username:<br>
-            <input type="text" name="email_id" id="points">
-           <br><br>
+            <input type="text" name="email_id" id="loginUsername" class="h">
+            <br><br>
             Password:<br>
-            <input type="text" name="Phone_No" id="points"><br>
+            <input type="text" name="Phone_No" id="loginPass" class="h"><br>
             <h6>Forgot password?</h6><br>
-            <a href="home.html" class="add"><button type="button">Login</button></a>
+            <button type="button" id="loginButton" class="h">Login</button>
             <p>Don't have an account?</p>
-            <h6><a href="signup.html">Signup</a></h6>
+            <h6><u>Signup</u></h6>
         </form>
     </div>
+
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>
