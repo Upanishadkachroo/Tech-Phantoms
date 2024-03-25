@@ -7,24 +7,35 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <h1>Signup</h1>
     <div class="container">
+        <h1 style="color: white;">Sign Up</h1>
+        <div class="box">
         <form id="loginForm" action="/users/login" method="post">
-            Email-id:<br>
-            <input type="text" name="email-id" id="emailInput" class="h"><br><br>
-            Username:<br>
-            <input type="text" name="username" id="usernameInput" class="h">
-           <br><br>
-            Enter Password:<br>
-            <input type="password" name="Phone_No" id="passwordInput" class="h"><br><br>
-            Confirm-password:<br>
-            <input type="password" name="username" id="confirmPasswordInput" class="h"><br><br>
+
+            <div class="box1">
+            <label for="emailInput" class="center">Email-Id</label>
+            <input type="text" name="email-id" id="emailInput" class="h">
+            </div>
             <br>
-        </form>
-        <a href="hobbies.html">
-            <button type="button" id="signupButton">Signup</button>
+
+            <div class="box2">
+            <label for="username" class="center">Enter Password</label>
+            <input type="password" name="username" id="usernameInput" class="h">
+            </div>
+            <br>
+           
+            <div class="box3">
+            <label for="confirmPasswordInput" class="center">Confirm Password</label>
+            <input type="password" id="confirmPasswordInput" class="h">
+            </div>
+            
+            
+            <br>
+            <a href="hobbies.html">
+                <button type="button" id="signupButton">Sign Up</button>
             </a>
-        
+        </form>
+        </div>
     </div>
     <script type="module" src="index.js"></script>
 </body>

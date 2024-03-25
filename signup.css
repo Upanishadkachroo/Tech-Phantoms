@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing:border-box;
 }
- body{
-    font-family: cursive;
- }
 
 h1{
     text-align: center;
@@ -15,12 +12,11 @@ h1{
 }
 
 .container{
-    border-radius: 10px;
-    border: 2px solid #50285a;
-    height: 550px;
-    width:700px;
-    margin-left: 430px;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 form{
@@ -39,22 +35,84 @@ input{
     padding-left: 10px;
 }
 
-#points{
-    width: 550px;
+/* #points{
+    width: 250px;
     height:50px;
-}
+} */
 
 button{
     width: 180px;
     height:40px;
-    border-radius: 20px;
-    background-color: #50285a;
+    /* border-radius: 20px; */
+    background-color: rgb(91 33 182);
     color: white;
     margin-left: 220px;
     font-size: 20px;
-    
+    margin-bottom: 2rem;
 }
 .h{
     height: 40px;
     width: 570px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    height: 460px;
+    width:550px;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    background-color: white;
+    /* margin-right: 2rem;
+    padding: 3rem; */
+}
+.center{
+    align-self:flex-start;
+}
+form{
+    padding-top: 50px;
+    font-size: 30px;
+    margin-left: 70px;
+    color: black;
+}
+body{
+    background-color: rgb(115, 66, 193);
+}
+#signupButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13rem;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+}
+input[type=text]{
+    width:490px;
+}
+input[type=password]{
+    width:490px;
 }

@@ -1,5 +1,5 @@
 .background{
-  background-image: url("");
+  
   
     height: 100vh;
   background-size: cover ;
@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 40px;
   text-decoration: underline;
-  color: #53275E;
+  color: rgb(91 33 182);
   padding-top: 20px;
   font-family: comic;
 }
@@ -26,12 +26,12 @@
 .h{
   font-weight: bold;
   font-size: 25px;
-  color: #53275E;
+  color: rgb(91 33 182);
   font-family:"comic neue";
 }
 .p{
   font-size: 15px;
-  color: #53275E;
+  color: rgb(91 33 182);
   padding: 10px; 
 }
 .tr{
@@ -50,7 +50,7 @@
   padding: 5px;
   width: 17vw;
   height: 35.6px;
-  border-color: #53275E;
+  border-color: rgb(91 33 182);
   border-radius: 5px;
 }
 .b:hover{
@@ -75,7 +75,7 @@
 }
 .continue{
   color:white;
-  background-color: #50285a;
+  background-color: rgb(91 33 182);
   text-align: center;
   width:150px;
   height:50px;
@@ -87,4 +87,7 @@
 }
 .c{
   margin-top: 20px;
+}
+#profileButton{
+  text-decoration: none;
 }

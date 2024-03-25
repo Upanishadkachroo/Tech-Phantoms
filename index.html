@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- <h1>Login</h1> -->
+    <div class="container">
+        <h1 style="color: white;">Login</h1>
+        <div class="box">
+           <form id="signupForm" action="/users/login" method="post">
+            <div class="box1">
+            <label for="loginUsername" class="center">Username</label>
+            <input type="text" name="email_id" id="loginUsername" class="h">
+            </div>
+
+            <div class="box2">
+            <label for="loginpass" class="center">Password</label>
+            <input type="password" name="Phone_No" id="loginPass" class="h">
+            </div>
+
+            <!-- <h6>Forgot password?</h6> -->
+            <a href="home.html">
+            <button type="button" id="loginButton" class="h">Login</button>
+            </a>
+
+            <div class="foot">
+            <p>Don't have an account?</p>
+            <a href="signup.html">
+            <h6><u style="color: rgb(91 33 182);">Signup</u></h6>
+            </a>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

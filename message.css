@@ -5,7 +5,7 @@
   }
   .navcont{
     height: 50px;
-    background-color:blueviolet;
+    background-color:rgb(91 33 182);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@
   }
   
   #icons-chat{
-    background-color:#AEA0D6;
+    background-color:rgb(91 33 182);
   }
   
   body, html {
@@ -50,7 +50,7 @@
   }
   
   .connections{
-    background-color: #D8CDF7;
+    background-color: rgb(91 33 182);
     width: 450px;
     height:680px;
     text-align: center;
@@ -61,7 +61,7 @@
   display: grid;
   grid-template-columns: auto;
   
-  background-color: #D8CDF7;
+  background-color: rgb(91 33 182);
   padding: 10px;
   grid-gap: 7px;
   }
@@ -76,8 +76,8 @@
   
   .connect{
   font-size: 30px;
-  background-color: #D8CDF7;
-  color: #50285a;
+  background-color: rgb(91 33 182);
+  color: white;
   padding-left: 10px;
   padding-top: 10px;
   }
@@ -101,7 +101,7 @@
   
   .icon{
     border-radius: 50%;
-    background-color: #50285a;
+    background-color: rgb(91 33 182);
   }
   
   .top{
@@ -124,7 +124,7 @@
   .msg-header{
     margin-left:20px;
     margin-top: 15px;
-    color: #50285a;
+    color: rgb(91 33 182);
     display:block;
   }
   
@@ -152,7 +152,7 @@
   .chats {
     padding: 30px 15px 0 25px;
     height: 520px;
-    border:5px solid #8e579c;
+    border:5px solid rgb(91 33 182);
   }
   
   /* Styling the message page */
