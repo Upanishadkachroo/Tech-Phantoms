@@ -4,14 +4,15 @@
     box-sizing: border-box;
   }
   .navcont{
-    height: 50px;
+    height: 4rem;
     background-color:rgb(91 33 182);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.1rem;
-    border-radius: 5px;
-    margin: 0.1rem;
+    /* border-radius: 5px; */
+    /* margin: 0.1rem; */
+    margin-bottom: 0.1rem;
   }
   
   
